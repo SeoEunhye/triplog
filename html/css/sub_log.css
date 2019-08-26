@@ -1,0 +1,333 @@
+@charset "UTF-8";
+
+/*header*/
+#header{
+	padding-top: 30px;
+	padding-left: 50px;
+	position: fixed;
+	z-index: 10;
+}
+/*logo*/
+#header h1{
+	background:url(../images/sub_logo.png) no-repeat center center;
+	width: 136px;
+	height: 57px;
+	text-indent: -9999px;
+}
+#header h1 a{
+	height: 100%;
+}
+/*nav*/
+.nav{
+	position: absolute;
+	top: 300px;
+	left: -50px;
+	transform: rotate(270deg);
+}
+.nav li{
+	float: left;
+}
+.nav li a{
+	padding: 0 15px;
+}
+/*mypage*/
+.mypage{
+	position: fixed;
+	top: 40px;
+	right: 50px;
+}
+.mypage a{}
+.mypage a img{}
+
+/*Body*/
+#logBody{
+	background: url(../images/images/sub_logBgTop.png) no-repeat;
+	width: 100%;
+	background-position: top;
+}
+#bodyWrap{
+	background: url(../images/images/sub_logBgBottom.png) no-repeat;
+	width: 100%;
+	background-position: bottom;
+}
+/*container*/
+#container{
+	position: relative;
+}
+/*subTitle*/
+.subTitle{
+	position: absolute;
+	top: 130px;
+	right: 400px;
+	color: #fff;
+}
+.subTitle h2{
+	font-size: 60px;
+}
+.subTitle p{
+	font-size: 20px;
+	font-weight: 300;
+	position: relative;
+}
+.subTitle p:after{
+	content: "";
+	display: block;
+	width: 490px;
+	height: 1px;
+	background: #fff;
+	position: absolute;
+	right: -400px;
+	top: 13px
+}
+/*selectWrap*/
+.selectWrap{
+	position: relative;
+	width: 100%;
+	height: 910px;
+}
+.selectBg img{
+	position: absolute;
+	top: 50%;
+	margin-top: -97px;
+	left: 50%;
+	margin-left: -471px;
+}
+/*selectTrip*/
+.selectTrip{
+	text-align: center;
+	background: #fff;
+	position: absolute;
+	top: 50%;
+	margin-top: -89px;
+	left: 50%;
+	margin-left: -467px;
+	padding: 50px 20px;
+	width: 976px;
+	height: 303px;
+}
+.selectTrip .selectOn{
+}
+.selectTrip tr{
+	margin: 40px 0;
+}
+.selectTrip .selectTitle{
+	font-weight: 400;
+	cursor: default;
+}
+.selectTrip tr td{
+	width: 120px;
+	height: 40px;
+	font-weight: 300;
+	cursor: pointer;
+}
+.selectTrip tr td:nth-child(2){
+	width: 30px;
+    cursor: default;
+}
+.selectTrip tr td:nth-child(7){
+	width: 150px;
+}
+/*selectList*/
+.selectList{
+	margin-bottom: 80px;
+}
+.selectList li{
+	float: left;
+	margin-right: 20px;
+}
+.selectList .listOn{
+	color: #CB283F;
+	position: relative;
+}
+.selectList .listOn:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #CB283F;
+	position: absolute;
+	bottom: -5px;
+}
+/*tripLog*/
+#tripLog{}
+
+.country{
+	position: relative;
+	margin-bottom: 450px;
+}
+.countryImg{
+	background: url(../images/images/sub_hongkongImg.png) no-repeat;
+	width: 609px;
+	height: 611px;
+	text-indent: -9999px;
+}
+.country h2{
+	font-size: 115px;
+    position: absolute;
+    top: 213px;
+    right: 231px;
+    transform: rotate(90deg);
+    letter-spacing: -8px;
+}
+.hogkong h2{
+	right: 231px;
+}
+.country p{
+	font-size: 26px;
+	display: inline-block;
+	margin: 10px 0;
+}
+
+.moreBtn{
+	display: inline-block;
+	position: relative;
+}
+.hogkong .moreBtn{
+	margin-left: 270px;
+}
+.moreBtn:after{
+	content: "";
+	display: block;
+	width: 70px;
+	height: 1px;
+	background: #000;
+	position: absolute;
+	top: 14px;
+	left: -75px;
+}
+.moreBtn a{
+	font-size: 15px;
+	font-weight: 300;
+}
+.tagList{}
+.tagList li{
+	float: left;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	box-shadow: 1px 2px 3px rgba(203, 40, 63, 0.5);
+	margin-right: 10px;
+	padding: 2px 8px;
+}
+.tagList li a{
+	color: #CB283F;
+	font-size: 16px;
+	font-weight: 200;
+}
+.logIcon{
+	position: absolute;
+	bottom: 100px;
+	left: 380px;
+}
+.logIcon li{
+	float: left;
+	margin-right: 10px;
+}
+.logIcon li a{
+	color: #fff;
+	font-weight: 200;
+	vertical-align: middle;
+}
+.logIcon li a img{
+	margin: 0 8px;
+	vertical-align: middle;
+}
+
+/*Singapure*/
+.Singapure{
+    margin-left: 591px;
+	width: 609px;
+}
+.Singapure h2{
+	top: -100px;
+	left: -245px;
+	transform: rotate(0deg);
+}
+.Singapure .moreBtn{
+	margin-left: 230px;
+}
+.Singapure .SingapureImg{
+	background-image: url(../images/images/sub_singapureImg.png);
+}
+
+/*Bangkok*/
+.Bangkok{
+	width: 609px;
+	position: relative;
+	margin-left: 90px;
+}
+.Bangkok h2{
+	font-size: 115px;
+    position: absolute;
+    top: 213px;
+    right: 392px;
+    transform: rotate(90deg);
+    letter-spacing: -8px;
+}
+.Bangkok .moreBtn{
+	margin-left: 160px;
+}
+.Bangkok .BangkokImg{
+	background-image: url(../images/images/sub_bangkokImg.png);
+}
+.Bangkok .logIcon{
+	bottom: 100px;
+}
+
+/*osaka*/
+.osaka{
+    margin-left: 591px;
+	width: 609px;
+	margin-bottom: 700px;
+}
+.osaka h2{
+	top: 90px;
+	left: -220px;
+	transform: rotate(0deg);
+}
+.osaka .moreBtn{
+	margin-left: 170px;
+}
+.osaka .osakaImg{
+	background-image: url(../images/images/sub_osakaImg.png);
+}
+
+
+/*moreTrip*/
+.moreTrip{
+	font-size: 55px;
+	font-weight: 600;
+	position: absolute;
+	bottom: -350px;
+	right: 70px;
+}
+.moreTrip img{
+	vertical-align: middle;
+}
+.moreTrip p{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*footer*/
+#footer{
+	text-align: center;
+	background: #ededed;
+	width: 100%;
+	line-height: 30px;
+	font-size: 13px;
+}
+.footerWrap{}
+.footerWrap p{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.fMenu{
+	display: inline-block;
+	margin-left: 40px;
+	vertical-align: middle;
+}
+.fMenu li{
+	float: left;
+}
+.fMenu li a{}

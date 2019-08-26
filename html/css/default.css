@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body,h1,h2,h3,h4,h5,h6,p,dl,dt,dd{
+	margin: 0;
+}
+body{
+	font-family: 'NotoSans',sans-serif;
+    cursor: default;
+}
+ul,ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #222;
+	display: block;
+}
+.cf:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.inner{
+	width: 1200px;
+	margin: 0 auto;
+}
