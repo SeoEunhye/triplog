@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>트립로그</title>
+		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="css/fullpage.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="js/fullpage.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/sub_log.js"></script>
+		
+		<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3,
+	#section4,
+    #section5{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(images/main_img01.jpg);
+	}
+	#section0 h1{
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#section1{
+		background-image: url(images/main_img02.jpg);
+	}
+	#section2{
+		background: #cb283f;
+	}
+	#section3{
+		background: #ffb400;
+	}
+	#section4{
+		background: #006eda;
+	}
+
+	</style>
+
+	</head>
+	<body>
+		<!--전체시작-->
+		<!--header-->
+        <header id="header">
+            <!--logo-->
+            <h1><a href="index.html">logo</a></h1>
+            <!--logo-->
+            <!--nav-->
+            <ul class="nav cf">
+                <li><a href="sub_map.html">일정만들기</a></li>
+                <li><a href="sub_log.html">트래블로그</a></li>
+            </ul>
+            <!--nav-->
+            <!--mypage-->
+            <div class="mypage"><a href="#">
+                    <img src="images/icon_mypage.png" alt="마이페이지">
+            </a></div>
+            <!--mypage-->
+            <!--scrollDown-->
+            <div class="scrollDown">
+                <p>Scroll down</p>
+                <img src="images/main_icon_scrolldown.png" alt="스크롤다운이미지">
+            </div>
+            <!--scrollDown-->
+        </header>
+        <!--header-->
+		<div id="fullpage">
+            <!-----------------------section0---------------------->
+			<div class="section " id="section0">
+                <!--container-->
+                <div class="container">
+                    <!--mainWrap-->
+                    <div class="mainWrap">
+                        <!--mainText-->
+                        <div class="mainText">
+                            <h2>나만의 여행 플래너, 트립로그</h2>
+                            <p>상상 속 여행을 쉽고 빠르게 계획하세요!</p>
+                        </div>
+                        <!--mainText-->
+                        <!--searchWrap-->
+                        <div class="searchWrap">
+                            <!--searchBox-->
+                            <div class="searchBox">
+                                <input type="text" placeholder="어디를 여행하고 싶으세요?">
+                                <a href="sub_log.html">
+                                    <img src="images/main_icon_search.png" alt="검색아이콘">
+                                </a>
+                            </div>
+                            <!--searchBox-->
+                            <p>추천도시 : 오사카, 홍콩, 파리</p>
+                            <a href="sub_map.html">
+                            <p class="mapSearch">지도에서 검색</p>
+                                <img src="images/main_icon_map.png" alt="지도검색아이콘">
+                            </a>
+                        </div>
+                        <!--searchWrap-->
+                    </div>
+                    <!--mainWrap-->
+                    <!--mouseScroll-->
+                    <div class="mouseScroll hvr-wobble-vertical">
+                        <img src="images/main_icon_mousedown.png" alt="마우스스크롤아이콘">
+                    </div>
+                    <!--mouseScroll-->
+                </div>
+                <!--container-->
+			</div>
+            <!-----------------------section0---------------------->
+            <!-----------------------section1---------------------->
+			<div class="section" id="section1">
+                <!--selectTrip-->
+                <div class="selectBg">
+                    <img src="images/main_outline.png" alt="아웃라인이미지">
+                    <table class="selectTrip">
+                        <caption>TRAVELOG</caption>
+                        <tr>
+                            <td class="selectTitle">여행지</td>
+                            <td>&#8226;</td>
+                            <td>국내</td>
+                            <td><span class="selectOn">아시아</span></td>
+                            <td>유럽</td>
+                            <td>남태평양</td>
+                            <td>북아메리카</td>
+                            <td>중남미</td>
+                        </tr>
+                        <tr>
+                            <td class="selectTitle">여행일</td>
+                            <td>&#8226;</td>
+                            <td>1-3일</td>
+                            <td>4-6일</td>
+                            <td>7-10일</td>
+                            <td><span class="selectOn">11-15일</span></td>
+                            <td>15-30일</td>
+                            <td>30일이상</td>
+                        </tr>
+                        <tr>
+                            <td class="selectTitle">여행시기</td>
+                            <td>&#8226;</td>
+                            <td><span class="selectOn">봄</span></td>
+                            <td>여름</td>
+                            <td>가을</td>
+                            <td>겨울</td>
+                        </tr>
+                        <tr>
+                            <td class="selectTitle">여행테마</td>
+                            <td>&#8226;</td>
+                            <td>나홀로여행</td>
+                            <td>가족여행</td>
+                            <td>커플여행</td>
+                            <td>친구와함께</td>
+                            <td>비즈니스여행</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--selectTrip-->
+                <!--goTrip-->
+                <div class="goTrip">
+                    <a href="sub_log.html"><p>GO</p></a>
+                </div>
+                <!--goTrip-->
+                <h2 class="best">BEST TRIP<span>3</span></h2>
+            </div>
+            <!-----------------------section1---------------------->
+            <!-----------------------section2---------------------->
+            <div class="section" id="section2">
+                <div class="hongkongWrap cf">
+                    <!--hongkongLeft-->
+                    <div class="hongkongLeft">
+                        <img src="images/main_hongkong.png" alt="홍콩이미지">
+                    <!--hongkongText-->
+                    <div class="hongkongText">
+                        <p>2박3일 홍콩 알짜배기 일정!</p>
+                        <p>2019.10.24~2019.10.26 (3일) 나홀로여행</p>
+                        <!--logIcon-->
+                        <ul class="logIcon">
+                            <li>
+                                <img src="images/images/sub_logIcon1.png" alt="조회수아이콘">6643
+                            </li>
+                            <li>
+                                <img src="images/images/sub_logIcon2.png" alt="좋아요수아이콘">960
+                            </li>
+                            <li>
+                                <img src="images/images/sub_logIcon3.png" alt="댓글수아이콘">813
+                            </li>
+                        </ul>
+                        <!--logIcon-->
+                    </div>
+                    <!--hongkongText-->
+                    </div>
+                    <!--hongkongLeft-->
+                    <!--hongkongRight-->
+                    <div class="hongkongRight">
+                        <img src="images/main_hkBg.png" alt="홍콩배경이미지">
+                        <h2>HONGKONG</h2>
+                    </div>
+                    <!--hongkongRight-->
+                </div>
+            </div>
+            <!-----------------------section2---------------------->
+            <!-----------------------section3---------------------->
+            <div class="section" id="section3">
+                <div class="barWrap cf">
+                    <!--barLeft-->
+                    <div class="barLeft">
+                        <img src="images/main_barcelona.png" alt="바르셀로나이미지">
+                    <!--barText-->
+                    <div class="barText">
+                        <p>가우디 투어를 중심으로 바르셀로나 여행을!</p>
+                        <p>2019.08.06~2019.08.21 (15일) 가족여행</p>
+                        <!--logIcon-->
+                        <ul class="logIcon">
+                            <li>
+                                <img src="images/images/sub_logIcon1(black).png" alt="조회수아이콘">5513
+                            </li>
+                            <li>
+                                <img src="images/images/sub_logIcon2(black).png" alt="좋아요수아이콘">851
+                            </li>
+                            <li>
+                                <img src="images/images/sub_logIcon3(black).png" alt="댓글수아이콘">258
+                            </li>
+                        </ul>
+                        <!--logIcon-->
+                    </div>
+                    <!--barText-->
+                    </div>
+                    <!--barLeft-->
+                    <!--barRight-->
+                    <div class="barRight">
+                        <img src="images/main_barBg.png" alt="바르셀로나배경이미지">
+                        <h2>BARCELONA</h2>
+                    </div>
+                    <!--barRight-->
+                </div>
+            </div>
+            <!-----------------------section3---------------------->
+            <!-----------------------section4---------------------->
+            <div class="section" id="section4">
+                <div class="habanaWrap cf">
+                    <!--habanaLeft-->
+                    <div class="habanaLeft">
+                        <img src="images/main_habana.png" alt="하바나이미지">
+                    <!--habanaText-->
+                    <div class="habanaText">
+                        <p>낭만의 도시 하바나에서 즐기는 힐링여행!</p>
+                        <p>2019.05.01~2019.05.15 (15일) 커플여행</p>
+                        <!--logIcon-->
+                        <ul class="logIcon">
+                            <li>
+                                <img src="images/images/sub_logIcon1.png" alt="조회수아이콘">6531
+                            </li>
+                            <li>
+                                <img src="images/images/sub_logIcon2.png" alt="좋아요수아이콘">690
+                            </li>
+                            <li>
+                                <img src="images/images/sub_logIcon3.png" alt="댓글수아이콘">287
+                            </li>
+                        </ul>
+                        <!--logIcon-->
+                    </div>
+                    <!--habanaText-->
+                    </div>
+                    <!--habanaLeft-->
+                    <!--habanaRight-->
+                    <div class="habanaRight">
+                        <img src="images/main_habaBg.png" alt="하바나배경이미지">
+                        <h2>HABANA</h2>
+                    </div>
+                    <!--habanaRight-->
+                </div>
+            </div>
+            <!-----------------------section4---------------------->
+            <!------------------------footer----------------------->
+            <footer class="section fp-auto-height" id="section5">
+				<div class="footerWrap cf">
+					<p>&copy;TripLog Corp All rights reserved.</p>
+					<ul class="fMenu cf">
+						<li><a href="#">이용약관｜</a></li>
+						<li><a href="#">개인정보보호정책｜</a></li>
+						<li><a href="#">위치기반서비스 이용약관｜</a></li>
+						<li><a href="#">서비스소개｜</a></li>
+						<li><a href="#">한국어｜</a></li>
+						<li><a href="#">English｜</a></li>
+						<li><a href="#">中文(简体)</a></li>
+					</ul>
+				</div>
+			</footer>
+			</div>
+		<!--전체종료-->
+
+		<script type="text/javascript" src="../dist/fullpage.js"></script>
+		<script type="text/javascript" src="examples.js"></script>
+
+		<script type="text/javascript">
+			var myFullpage = new fullpage('#fullpage', {
+				verticalCentered: false,
+				//to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+				css3:false
+			});
+
+		</script>
+	</body>
+</html>

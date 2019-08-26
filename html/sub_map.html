@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<title>트립로그</title>
+		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+		<link rel="stylesheet" type="text/css" href="css/default.css">
+		<link rel="stylesheet" type="text/css" href="css/sub_map.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/daterangepicker.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+		<script type="text/javascript" src="js/daterangepicker.js"></script>
+		<script type="text/javascript" src="js/sub_map.js"></script>
+	</head>
+	<body>
+		<!--전체시작-->
+		<div id="bodyWrap">
+			<!--header-->
+			<header id="header" class="cf">
+				<!--logo-->
+				<h1><a href="index.html">로고</a></h1>
+				<!--logo-->
+				<!--gnb-->
+				<ul class="gnb">
+					<li><a href="#">일정만들기</a></li>
+					<li><a href="sub_log.html">트래블로그</a></li>
+				</ul>
+				<!--gnb-->
+				<!--utill-->
+				<div class="utill">
+					<div class="mypage"><a href="#">mypage</a></div>
+					<div class="save"><a href="#">저장하기</a></div>
+				</div>
+				<!--utill-->
+			</header>
+			<!--header-->
+			<!--container-->
+			<div id="container" class="cf">
+				<div class="leftMenu">
+					<div class="subCon1">
+						<div class="dateBox">
+							<!--daterangepicker-->
+							<input type="text" name="daterange" value="07/18/2019 - 07/20/2019" />
+							<!--daterangepicker-->
+						</div>
+						<h4>전체 일정 보기</h4>
+						<dl class="dayOne"><a href="#">
+							<dt>DAY1<p>07.18</p></dt>
+							<dd>목요일<br>오사카</dd>
+							<dd><img src="images/images/Untitled-1_03.png" alt="오른쪽 화살표"></dd>
+						</a></dl>
+						<dl class="dayTwo"><a href="#">
+							<dt>DAY2<p>07.19</p></dt>
+							<dd>금요일<br>오사카</dd>
+							<dd><img src="images/images/Untitled-1_03.png" alt="오른쪽 화살표"></dd>
+						</a></dl>
+						<dl class="dayThree"><a href="#">
+							<dt>DAY3<p>07.20</p></dt>
+							<dd>토요일<br>오사카</dd>
+							<dd><img src="images/images/Untitled-1_03.png" alt="오른쪽 화살표"></dd>
+						</a></dl>
+						<div class="plusDay"><a href="#">DAY추가</a></div>
+					</div>
+					<div class="subCon2 dayOneMenu">
+						<dl>
+							<dt>DAY1<p>07.18</p></dt>
+							<dd>일정관리</dd>
+						</dl>
+						<div class="con2BoxWrap">
+							<div class="rute"><a href="#">경로최적화</a></div>
+							<ul class="con2Box cf">
+								<li class="areaPlus"><a href="#">장소추가</a></li>
+								<li><a href="#">교통수단</a></li>
+							</ul>
+                        </div>
+					</div>
+                    <div class="subCon2 dayTwoMenu">
+						<dl>
+							<dt>DAY2<p>07.19</p></dt>
+							<dd>일정관리</dd>
+						</dl>
+						<div class="con2BoxWrap">
+							<div class="rute"><a href="#">경로최적화</a></div>
+							<ul class="con2Box cf">
+								<li class="areaPlus"><a href="#">장소추가</a></li>
+								<li><a href="#">교통수단</a></li>
+							</ul>
+                        </div>
+					</div>
+                    <div class="subCon2 dayThreeMenu">
+						<dl>
+							<dt>DAY3<p>07.20</p></dt>
+							<dd>일정관리</dd>
+						</dl>
+						<div class="con2BoxWrap">
+							<div class="rute"><a href="#">경로최적화</a></div>
+							<ul class="con2Box cf">
+								<li class="areaPlus"><a href="#">장소추가</a></li>
+								<li><a href="#">교통수단</a></li>
+							</ul>
+                        </div>
+					</div>
+				</div>
+				<div class="subCon3">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104994.82763617589!2d135.41564631303686!3d34.67771924213471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6553406e2e1%3A0xc55bc16ee46a2fe7!2z7J2867O4IOyYpOyCrOy5tOu2gCDsmKTsgqzsubTsi5w!5e0!3m2!1sko!2skr!4v1563500761871!5m2!1sko!2skr" width="100%" height="200%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="subCon4">
+					<h2>현재위치</h2>
+					<div class="position cf">
+						<div class="osaka"><p>오사카</p><span>일본</span></div>
+						<div class="choice"><a href="#">도시선택</a></div>
+					</div>
+                    <div class='toggle'>
+                        <div class='tabs'>
+                            <div class='tab active'>추천장소</div>
+                            <div class='tab'>여행상품</div>
+                        </div>
+                    <div class='panels'>
+                        <div class='panel'>
+                             <ul class="pickwrap cf">
+						<li class="click on">랭킹</li>
+						<li class="click like">좋아요</li>
+						<li class="click">거리</li>
+					</ul>
+					<ul class="positionBox">
+						<li class="pBox1"><a href="#">
+							<div class="textWrap">
+							<h3>도톤보리</h3><p>랜드마크,나이트쇼핑</p>
+							</div>
+						</a></li>
+						<li class="pBox2"><a href="#">
+							<div class="textWrap">
+							<h3>오사카성</h3><p>랜드마크,성/궁궐</p>
+							</div>
+						</a></li>
+						<li class="pBox3"><a href="#">
+							<div class="textWrap">
+							<h3>우메다스카이빌딩</h3><p>랜드마크,건축물</p>
+							</div>
+						</a></li>
+						<li class="pBox4"><a href="#">
+							<div class="textWrap">
+							<h3>헵파이브관람차</h3><p>랜드마크,전경/야경</p>
+							</div>
+						</a></li> 
+                            </ul>
+                        </div>
+                        <div class='panel'>Panel 2</div>
+                    </div>
+                    </div>
+				</div>
+			</div>
+			<!--container-->
+			<!--footer-->
+			<footer id="footer">
+				<div class="footerWrap cf">
+					<p>&copy;TripLog Corp All rights reserved.</p>
+					<ul class="fMenu cf">
+						<li><a href="#">이용약관｜</a></li>
+						<li><a href="#">개인정보보호정책｜</a></li>
+						<li><a href="#">위치기반서비스 이용약관｜</a></li>
+						<li><a href="#">서비스소개｜</a></li>
+						<li><a href="#">한국어｜</a></li>
+						<li><a href="#">English｜</a></li>
+						<li><a href="#">中文(简体)</a></li>
+					</ul>
+				</div>
+			</footer>
+			<!--footer-->
+		</div>
+		<!--전체종료-->
+	</body>
+</html>
